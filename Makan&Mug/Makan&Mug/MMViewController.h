@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBConnector.h"
 
 @interface MMViewController : UIViewController
 
