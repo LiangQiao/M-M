@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03180A3B158C39560076BFDB /* ModalNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 03180A3A158C39560076BFDB /* ModalNoAnimationSegue.m */; };
+		03180A40158C4ED00076BFDB /* MMFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03180A3F158C4ED00076BFDB /* MMFindViewController.m */; };
+		03180A43158C4EEB0076BFDB /* MMShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03180A42158C4EEB0076BFDB /* MMShareViewController.m */; };
 		03553B451571BFFE00B141A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03553B441571BFFE00B141A6 /* UIKit.framework */; };
 		03553B471571BFFE00B141A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03553B461571BFFE00B141A6 /* Foundation.framework */; };
 		03553B491571BFFE00B141A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03553B481571BFFE00B141A6 /* CoreGraphics.framework */; };
@@ -25,6 +28,7 @@
 		03553B9B1571C41200B141A6 /* FBConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 03553B931571C41200B141A6 /* FBConnector.m */; };
 		03553B9C1571C41200B141A6 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03553B941571C41200B141A6 /* FBDialog.bundle */; };
 		03553B9D1571C41200B141A6 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03553B991571C41200B141A6 /* libfacebook_ios_sdk.a */; };
+		03560A7215844CCF0048F115 /* MMLocationSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03560A7115844CCF0048F115 /* MMLocationSelectController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03180A39158C39560076BFDB /* ModalNoAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalNoAnimationSegue.h; sourceTree = "<group>"; };
+		03180A3A158C39560076BFDB /* ModalNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalNoAnimationSegue.m; sourceTree = "<group>"; };
+		03180A3E158C4ED00076BFDB /* MMFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFindViewController.h; sourceTree = "<group>"; };
+		03180A3F158C4ED00076BFDB /* MMFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFindViewController.m; sourceTree = "<group>"; };
+		03180A41158C4EEB0076BFDB /* MMShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMShareViewController.h; sourceTree = "<group>"; };
+		03180A42158C4EEB0076BFDB /* MMShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMShareViewController.m; sourceTree = "<group>"; };
 		03553B401571BFFE00B141A6 /* Makan&Mug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Makan&Mug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03553B441571BFFE00B141A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03553B461571BFFE00B141A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,14 +84,16 @@
 		03553B8F1571C41200B141A6 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		03553B901571C41200B141A6 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		03553B911571C41200B141A6 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
-		03553B921571C41200B141A6 /* FBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnector.h; sourceTree = "<group>"; };
-		03553B931571C41200B141A6 /* FBConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBConnector.m; sourceTree = "<group>"; };
+		03553B921571C41200B141A6 /* FBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnector.h; path = Facebook/FBConnector.h; sourceTree = "<group>"; };
+		03553B931571C41200B141A6 /* FBConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBConnector.m; path = Facebook/FBConnector.m; sourceTree = "<group>"; };
 		03553B941571C41200B141A6 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
 		03553B951571C41200B141A6 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
 		03553B961571C41200B141A6 /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
 		03553B971571C41200B141A6 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
 		03553B981571C41200B141A6 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
 		03553B991571C41200B141A6 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		03560A7015844CCF0048F115 /* MMLocationSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLocationSelectController.h; sourceTree = "<group>"; };
+		03560A7115844CCF0048F115 /* MMLocationSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLocationSelectController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03180A3D158C39670076BFDB /* TrivialSegue */ = {
+			isa = PBXGroup;
+			children = (
+				03180A3A158C39560076BFDB /* ModalNoAnimationSegue.m */,
+				03180A39158C39560076BFDB /* ModalNoAnimationSegue.h */,
+			);
+			name = TrivialSegue;
+			sourceTree = "<group>";
+		};
 		03553B351571BFFE00B141A6 = {
 			isa = PBXGroup;
 			children = (
@@ -144,10 +165,18 @@
 			isa = PBXGroup;
 			children = (
 				03553B561571BFFE00B141A6 /* MainStoryboard_iPhone.storyboard */,
+				03560A7015844CCF0048F115 /* MMLocationSelectController.h */,
+				03560A7115844CCF0048F115 /* MMLocationSelectController.m */,
 				03553B591571BFFE00B141A6 /* MainStoryboard_iPad.storyboard */,
 				03553B5C1571BFFE00B141A6 /* MMViewController.h */,
 				03553B5D1571BFFE00B141A6 /* MMViewController.m */,
-				03553B801571C41200B141A6 /* Facebook */,
+				03180A3E158C4ED00076BFDB /* MMFindViewController.h */,
+				03180A3F158C4ED00076BFDB /* MMFindViewController.m */,
+				03180A41158C4EEB0076BFDB /* MMShareViewController.h */,
+				03180A42158C4EEB0076BFDB /* MMShareViewController.m */,
+				03553B921571C41200B141A6 /* FBConnector.h */,
+				03553B931571C41200B141A6 /* FBConnector.m */,
+				03180A3D158C39670076BFDB /* TrivialSegue */,
 				03553B4B1571BFFE00B141A6 /* Supporting Files */,
 			);
 			path = "Makan&Mug";
@@ -156,6 +185,7 @@
 		03553B4B1571BFFE00B141A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03553B801571C41200B141A6 /* fb_sdk */,
 				03553B531571BFFE00B141A6 /* MMAppDelegate.h */,
 				03553B541571BFFE00B141A6 /* MMAppDelegate.m */,
 				03553B4C1571BFFE00B141A6 /* Makan&Mug-Info.plist */,
@@ -185,14 +215,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		03553B801571C41200B141A6 /* Facebook */ = {
+		03553B801571C41200B141A6 /* fb_sdk */ = {
 			isa = PBXGroup;
 			children = (
 				03553B811571C41200B141A6 /* facebook-ios-sdk-inapp */,
 				03553B901571C41200B141A6 /* Facebook.h */,
 				03553B911571C41200B141A6 /* FBConnect.h */,
-				03553B921571C41200B141A6 /* FBConnector.h */,
-				03553B931571C41200B141A6 /* FBConnector.m */,
 				03553B941571C41200B141A6 /* FBDialog.bundle */,
 				03553B951571C41200B141A6 /* FBDialog.h */,
 				03553B961571C41200B141A6 /* FBFrictionlessRequestSettings.h */,
@@ -200,6 +228,7 @@
 				03553B981571C41200B141A6 /* FBRequest.h */,
 				03553B991571C41200B141A6 /* libfacebook_ios_sdk.a */,
 			);
+			name = fb_sdk;
 			path = Facebook;
 			sourceTree = "<group>";
 		};
@@ -338,6 +367,10 @@
 				03553B551571BFFE00B141A6 /* MMAppDelegate.m in Sources */,
 				03553B5E1571BFFE00B141A6 /* MMViewController.m in Sources */,
 				03553B9B1571C41200B141A6 /* FBConnector.m in Sources */,
+				03560A7215844CCF0048F115 /* MMLocationSelectController.m in Sources */,
+				03180A3B158C39560076BFDB /* ModalNoAnimationSegue.m in Sources */,
+				03180A40158C4ED00076BFDB /* MMFindViewController.m in Sources */,
+				03180A43158C4EEB0076BFDB /* MMShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +560,7 @@
 				03553B781571BFFE00B141A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03553B791571BFFE00B141A6 /* Build configuration list for PBXNativeTarget "Makan&MugTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +569,7 @@
 				03553B7B1571BFFE00B141A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
