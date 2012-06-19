@@ -94,6 +94,7 @@
 		03553B991571C41200B141A6 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
 		03560A7015844CCF0048F115 /* MMLocationSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLocationSelectController.h; sourceTree = "<group>"; };
 		03560A7115844CCF0048F115 /* MMLocationSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLocationSelectController.m; sourceTree = "<group>"; };
+		03875EA71590250D00C35853 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +165,11 @@
 		03553B4A1571BFFE00B141A6 /* Makan&Mug */ = {
 			isa = PBXGroup;
 			children = (
+				03875EA71590250D00C35853 /* Constants.h */,
 				03553B561571BFFE00B141A6 /* MainStoryboard_iPhone.storyboard */,
+				03553B591571BFFE00B141A6 /* MainStoryboard_iPad.storyboard */,
 				03560A7015844CCF0048F115 /* MMLocationSelectController.h */,
 				03560A7115844CCF0048F115 /* MMLocationSelectController.m */,
-				03553B591571BFFE00B141A6 /* MainStoryboard_iPad.storyboard */,
 				03553B5C1571BFFE00B141A6 /* MMViewController.h */,
 				03553B5D1571BFFE00B141A6 /* MMViewController.m */,
 				03180A3E158C4ED00076BFDB /* MMFindViewController.h */,

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MMFindViewController : UIViewController
-
+@property Location location;
 @end

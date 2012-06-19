@@ -91,7 +91,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="832"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2uR-oX-Z7C">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2uR-oX-Z7C">
                                                 <rect key="frame" x="44" y="39" width="72" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -167,7 +167,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="832"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kGV-uW-BYM">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XVd-xT-dBM">
                                                 <rect key="frame" x="21" y="39" width="119" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -178,6 +178,9 @@
                                                 <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="locationButtonPressed:" destination="iGy-Tm-0wH" eventType="touchUpInside" id="I5A-Td-gDe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Vq-t7-WUQ">
                                                 <rect key="frame" x="44" y="129" width="72" height="37"/>
@@ -254,9 +257,33 @@
                     <view key="view" contentMode="scaleToFill" id="QnK-8T-H0y">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i5t-Ib-7dv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9ad-7g-PuM">
+                                <rect key="frame" x="57" y="343" width="242" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Three"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Seat:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="st7-xq-pb8">
+                                <rect key="frame" x="7" y="354" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Share" id="kOh-XT-3mT"/>
+                    <navigationItem key="navigationItem" title="Share" id="kOh-XT-3mT">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="18J-av-xlU"/>
+                    </navigationItem>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2056" y="351"/>
@@ -269,6 +296,16 @@
                     <view key="view" contentMode="scaleToFill" id="KMA-ef-gFN">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pbE-oU-fxW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bvv-zT-PFz">
+                                <rect key="frame" x="0.0" y="305" width="320" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Find" id="6HN-vR-44S"/>
@@ -295,6 +332,29 @@
             <point key="canvasLocation" x="628" y="148"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MMFindViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMFindViewController.h"/>
+        </class>
+        <class className="MMLocationSelectController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMLocationSelectController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="canScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="libScrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="MMShareViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMShareViewController.h"/>
+        </class>
+        <class className="MMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="findButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

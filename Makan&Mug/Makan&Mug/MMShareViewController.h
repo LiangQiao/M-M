@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMShareViewController : UIViewController
 
+@interface MMShareViewController : UIViewController
+@property Location location;
 @end
